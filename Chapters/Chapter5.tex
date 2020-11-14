@@ -4,6 +4,7 @@
 
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
+En este capítulo se realiza un resumen sobre los conocimientos aplicados, el trabajo realizado hasta el momento y problemas que surgieron durante el desarrollo.
 
 %----------------------------------------------------------------------------------------
 
@@ -11,24 +12,57 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Conclusiones generales }
+\section{Trabajo realizado }
 
-La idea de esta sección es resaltar cuáles son los principales aportes del trabajo realizado y cómo se podría continuar. Debe ser especialmente breve y concisa. Es buena idea usar un listado para enumerar los logros obtenidos.
+En la presente memoria se documentó la implementación de un prototipo de domótica para edificios públicos. Particularmente se implemento el monitoreo de temperatura y humedad, el control de encendido y apagado de luces y aires acondicionados para diferentes marcas y la detección de movimiento en el área.
 
-Algunas preguntas que pueden servir para completar este capítulo:
+Se desarrolló e implementó satisfactoriamente una red de nodos que responden a una central y que proveen una estructura de servicios propia y local sin necesidad de una red Wi-Fi. La implementación permite, no solo generar eficiencia energética en edificios públicos de gran tamaño, sino también la detección de movimiento en las oficinas o áreas donde se encuentre un nodo. Ésto es importante para generar una alarma preventiva. También presenta una interfaz de visualización de fácil uso para el usuario.
 
-\begin{itemize}
-\item ¿Cuál es el grado de cumplimiento de los requerimientos?
-\item ¿Cuán fielmente se puedo seguir la planificación original (cronograma incluido)?
-\item ¿Se manifestó algunos de los riesgos identificados en la planificación? ¿Fue efectivo el plan de mitigación? ¿Se debió aplicar alguna otra acción no contemplada previamente?
-\item Si se debieron hacer modificaciones a lo planificado ¿Cuáles fueron las causas y los efectos?
-\item ¿Qué técnicas resultaron útiles para el desarrollo del proyecto y cuáles no tanto?
-\end{itemize}
+Se hicieron modificaciones de los requisitos a lo largo del proyecto debido al planteo del cliente. Los requisitos no fueron cumplidos en su totalidad, quedando para una segunda etapa las tareas de diseño de un hardware mas pequeño como así también las pruebas en planta.
+
+Surgieron nuevos riesgos que no estaban considerados al plantear el proyecto y que no pudieron ser mitigados con satisfacción. No obstante, se concluye que la mayoría de los objetivos planteados al comienzo del trabajo fueron alcanzados satisfactoriamente y se han obtenido conocimientos valiosos para la formación del autor.
+
+
+
+%\begin{itemize}
+%\item ¿Cuál es el grado de cumplimiento de los requerimientos?
+%\item ¿Cuán fielmente se puedo seguir la planificación original (cronograma incluido)?
+%\item ¿Se manifestó algunos de los riesgos identificados en la planificación? ¿Fue efectivo el plan de mitigación? ¿Se debió aplicar alguna otra acción no contemplada previamente?
+%\item Si se debieron hacer modificaciones a lo planificado ¿Cuáles fueron las causas y los efectos?
+%\item ¿Qué técnicas resultaron útiles para el desarrollo del proyecto y cuáles no tanto?
+%\end{itemize}
 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
-\section{Próximos pasos}
+\section{Conocimientos aplicados }
 
-Acá se indica cómo se podría continuar el trabajo más adelante.
+Durante el desarrollo del este trabajo se aplicaron conocimientos adquiridos a lo largo del año en la Especialización de Sistemas Embebidos. Todas las asignaturas cursadas aportaron conocimientos necesarios para que el trabajo finalmente se encuentre funcionando. Sin embargo, se resaltan a continuación aquellas materias de mayor relevancia para este trabajo.
+
+\begin{itemize}
+\item Gestión de Proyectos: la elaboración de un plan de proyecto para organizar el trabajo final, facilitó la realización del mismo.
+\item Ingeniería de Software en Sistemas Embebidos: la creación de un documento de especificaciones de requerimientos permitió ordenar y documentar las necesidades del cliente además de enseñar el uso de sistemas de control de versiones.
+\item Protocolos de Comunicación: resulto de utilidad para la creación del driver de uno de los componentes.
+\item Sistemas Operativos de Propósito General: se aplicaron conceptos de uso de hilos y procesos, como también de sincronización entre procesos y uso de variables compartidas.
+\item Desarrollo de Aplicaciones en Sistemas Operativos: se aplicaron conocimientos del lenguaje de programación Python, uso de ficheros y la programación orientada a objeto.
+\item Diseño de Circuitos Impresos: aportó al uso de la herramienta libre KiCad.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+\section{Trabajo futuro }
+
+Resulta imprescindible identificar el trabajo futuro, para dar continuidad al esfuerzo realizado hasta el momento y poder realizar un producto comercialmente atractivo. A continuación se listan las líneas de trabajo mas importantes:
+
+\begin{itemize}
+\item Diseñar un prototipo de hardware más pequeño para su uso dentro de cajas de electricidad convencionales.
+\item Modificar la interfaz web para agregar nodos de forma automática.
+\item Separar los leds infrarrojos del nodo para poder situarlos mas cerca del aire acondicionado.
+\item Agregar la posibilidad de actualizar el firmware del gateway de forma remota.
+\end{itemize}
+
+
+
